@@ -83,33 +83,33 @@ methods: {
                                 </div>
 
                                 <div class="description-services">
-                                    <h4>blablabla</h4>
+                                    <h4>Safety First</h4>
                                     <p>
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum quo nulla qui omnis vel quaerat voluptatibus corporis adipisci sapiente!
                                     </p>
                                 </div>
                             </div>
 
-                            <div class="my-row play">
+                            <div class="my-row col-9 offset-3 play">
                                 <div class="img-container">
                                     <img src="../assets/img/w-2.png" alt="">
                                 </div>
 
                                 <div class="description-services">
-                                    <h4>blablabla</h4>
+                                    <h4>Play Yards</h4>
                                     <p>
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum quo nulla qui omnis vel quaerat voluptatibus corporis adipisci sapiente!
                                     </p>
                                 </div>
                             </div>
 
-                            <div class="my-row monitor">
+                            <div class="my-row col-6 offset-6 monitor">
                                 <div class="img-container">
                                     <img src="../assets/img/w-1.png" alt="">
                                 </div>
 
                                 <div class="description-services">
-                                    <h4>blablabla</h4>
+                                    <h4>Monitor Your Pet</h4>
                                     <p>
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum quo nulla qui omnis vel quaerat voluptatibus corporis adipisci sapiente!
                                     </p>
@@ -177,7 +177,6 @@ methods: {
 }
 
 .section-why-us {
-    @include debug-3;
 
     .left {
         width: calc(100% / 2);
@@ -190,6 +189,8 @@ methods: {
 
     .right {
         width: calc(100% / 2);
+        margin-top: 50px;
+        padding: 20px;
         .upper-title {
                 p {
                     margin-bottom: 0;
@@ -197,13 +198,16 @@ methods: {
                     color: $top-header-bg-color;
                 }
             }
+        
+        h2 {
+            margin: 40px 0px;
+        }
 
         .reasons-to-choose {
-            
             .safety {
-                @include debug-1;
                 .img-container {
-                width: 200px;
+                width: 250px;
+                margin-right: 20px;
 
                 img {
                     width: 100%;
@@ -214,10 +218,11 @@ methods: {
             }
 
             .play {
-                @include debug-2;
-                width: 80%;
+                margin-top: 15px;
+                margin-bottom: 15px;
                 .img-container {
-                width: 200px;
+                width: 300px;
+                margin-right: 20px;
 
                 img {
                     width: 100%;
@@ -228,10 +233,9 @@ methods: {
             }
 
             .monitor {
-                @include debug-4;
-                width: 60%;
                 .img-container {
-                width: 200px;
+                width: 140%;
+                margin-right: 20px;
 
                 img {
                     width: 100%;
