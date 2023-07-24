@@ -52,7 +52,107 @@ methods: {
 
         <!-- SECOND SECTION -->
         <section class="section-services">
-            SECOND SECTION
+            <div class="my-container">
+
+                <div class="service-title">
+                    <p>Service</p>
+                    <h4>
+                        DogMilo Pet Care Service <br>
+                        For Your Best Friend.
+                    </h4>
+                </div>
+
+                <div class="my-row justify-content-center">
+
+                    <div class="card-service">
+
+                        <div class="img-container">
+                            <img src="../assets/img/d-1.png" alt="dog-icon">
+                        </div>
+
+                        <h5>Puppy Sitting</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.</p>
+
+                        <div class="arrow-container">
+                            <a href="#">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="card-service">
+
+                        <div class="img-container">
+                            <img src="../assets/img/d-2.png" alt="dog-icon">
+                        </div>
+
+                        <h5>Dog Walking</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.</p>
+
+                        <div class="arrow-container">
+                            <a href="#">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="card-service">
+
+                        <div class="img-container">
+                            <img src="../assets/img/d-3.png" alt="dog-icon">
+                        </div>
+
+                        <h5>Night Care</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.</p>
+
+                        <div class="arrow-container">
+                            <a href="#">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="card-service">
+
+                        <div class="img-container">
+                            <img src="../assets/img/d-4.png" alt="dog-icon">
+                        </div>
+
+                        <h5>Pet Sitting</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.</p>
+
+                        <div class="arrow-container">
+                            <a href="#">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="card-service">
+
+                        <div class="img-container">
+                            <img src="../assets/img/d-5.png" alt="dog-icon">
+                        </div>
+
+                        <h5>Pet Sitting</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.</p>
+
+                        <div class="arrow-container">
+                            <a href="#">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
         </section>
         <!-- SECOND SECTION -->
 
@@ -90,7 +190,7 @@ methods: {
                                 </div>
                             </div>
 
-                            <div class="my-row col-9 offset-3 play">
+                            <div class="my-row col-10 offset-2 play">
                                 <div class="img-container">
                                     <img src="../assets/img/w-2.png" alt="">
                                 </div>
@@ -103,7 +203,7 @@ methods: {
                                 </div>
                             </div>
 
-                            <div class="my-row col-6 offset-6 monitor">
+                            <div class="my-row col-8 offset-4 monitor">
                                 <div class="img-container">
                                     <img src="../assets/img/w-1.png" alt="">
                                 </div>
@@ -173,7 +273,69 @@ methods: {
 }
 
 .section-services {
-    @include debug-2
+    background-color: $bg-lightgrey-color;
+    padding: 50px 0px;
+
+    .service-title {
+        text-align: center;
+
+        p{
+            color: $top-header-bg-color;
+        }
+    }
+
+    .card-service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $orange-main-color;
+        width: calc(100% / 6);
+        text-align: center;
+        border-radius: 100px;
+        padding: 20px 10px;
+        margin: 20px 10px;
+        color: white;
+        .img-container {
+            width: 40px;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        h5 {
+            margin: 10px 0px;
+        }
+
+        p{
+            font-size: 0.9em;
+        }
+
+        .arrow-container {
+            width: 40px;
+            height: 40px;
+            font-size: 1.5em;
+            background-color: $button-color;
+            border-radius: 50%;
+            line-height: 40px;
+
+            a {
+                list-style: none;
+                color: black;
+                padding: 10px;
+
+            }
+
+            &:hover {
+                background-color: $button-hover-color;
+                
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
 }
 
 .section-why-us {
@@ -200,7 +362,12 @@ methods: {
             }
         
         h2 {
-            margin: 40px 0px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 14px;
         }
 
         .reasons-to-choose {
@@ -234,7 +401,7 @@ methods: {
 
             .monitor {
                 .img-container {
-                width: 140%;
+                width: 80%;
                 margin-right: 20px;
 
                 img {
