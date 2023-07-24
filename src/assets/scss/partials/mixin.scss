@@ -3,3 +3,18 @@
 // ------------
 
 @use "variables" as *;
+
+@mixin debug-1{
+    background-color:cornflowerblue ;
+    border: 2px dashed black;
+}
+
+@mixin debug-2{
+    background-color:cadetblue ;
+    border: 2px dashed black;
+}
+
+@mixin debug-3{
+    background-color:goldenrod ;
+    border: 2px dashed black;
+}

@@ -3,7 +3,13 @@ export default {
     name: "HeaderComponent",
 data (){
     return {
-
+        headerNavLinks: [
+            'home',
+            'about',
+            'services',
+            'training',
+            'blogs'
+        ]
     }
 },
 methods: {
@@ -14,7 +20,19 @@ methods: {
 
 <template>
     <header>
-        HEADER
+
+        <section class="info-header">
+
+        </section>
+
+        <section class="menu-header">
+
+        </section>
+
+        <section class="jumbotron">
+
+        </section>
+
     </header>
 </template>
 
