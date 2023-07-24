@@ -69,7 +69,7 @@ methods: {
                             <a href="#">{{ links }}</a>
                         </div>
                         <button>
-                            Get In Toch!
+                            Get In Touch!
                         </button>
                     </div>
 
