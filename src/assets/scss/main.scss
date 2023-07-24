@@ -5,3 +5,11 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
+.my-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.my-row{
+    display: flex;
+}
