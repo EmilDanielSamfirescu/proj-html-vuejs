@@ -4,11 +4,11 @@ export default {
 data (){
     return {
         headerNavLinks: [
-            'home',
-            'about',
-            'services',
-            'training',
-            'blogs'
+            'Home',
+            'About',
+            'Services',
+            'Training',
+            'Blogs'
         ]
     }
 },
@@ -42,11 +42,11 @@ methods: {
                     </div>
 
                     <div class="socials-container">
-                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-pinterest"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.pinterest.it/" target="_blank"><i class="fa-brands fa-square-pinterest"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     </div>
 
                 </div>
@@ -54,7 +54,25 @@ methods: {
         </section>
 
         <section class="menu-header">
+            <div class="my-container">
+                <div class="my-row justify-content-between align-items-center">
 
+                    <div class="logo-container">
+                        <img src="../assets/img/logo.png" alt="logo">
+                    </div>
+
+                    <div class="link-contaner d-flex justify-content-between align-items-center">
+                        <div class="links-menu"
+                        v-for="(links, i) in headerNavLinks" :key="i">
+                            <a href="#">{{ links }}</a>
+                        </div>
+                        <button>
+                            Get In Toch!
+                        </button>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
         <section class="jumbotron">
@@ -65,13 +83,11 @@ methods: {
 </template>
 
 <style lang="scss" scoped>
-// @use "../assets/scss/main.scss" as *;
-// @use "../assets/scss/partials/variables.scss" as *;
-// @use "../assets/scss/partials/mixin.scss" as *;
+@use "../assets/scss/partials/variables.scss" as *;
+@use "../assets/scss/partials/mixin.scss" as *;
 
 .info-header {
-    // background-color: $top-header-bg-color;
-    background-color: #7f7045;
+    background-color: $top-header-bg-color;
     .my-row {
     padding: 5px 0px;
     color: white;
@@ -117,6 +133,39 @@ methods: {
         }
 
     }
+}
+
+.menu-header {
+    padding: 10px 0px;
+
+    .links-menu > a{
+        font-size: 1.3em;
+        margin-right: 30px;
+        color: $text-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $orange-main-color;
+        }
+    }
+
+    button {
+        font-size: 1.3em;
+        color: white;
+        background-color: $orange-main-color;
+        border: none;
+        border-radius: 50px;
+        padding: 10px 25px;
+
+        &:hover {
+            background-color: $button-hover-color;
+        }
+    }
+}
+
+.jumbotron {
+    @include debug-1;
+    height: 20px;
 }
 
 </style>
