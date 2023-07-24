@@ -76,9 +76,46 @@ methods: {
                         <h2>Why Choose Us?</h2>
 
                         <div class="reasons-to-choose">
-                            <div class="col-12">a</div>
-                            <div class="col-9 offset-4">b</div>
-                            <div class="col-6 offset-6">c</div>
+
+                            <div class="my-row safety">
+                                <div class="img-container">
+                                    <img src="../assets/img/w-3.png" alt="">
+                                </div>
+
+                                <div class="description-services">
+                                    <h4>blablabla</h4>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum quo nulla qui omnis vel quaerat voluptatibus corporis adipisci sapiente!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="my-row play">
+                                <div class="img-container">
+                                    <img src="../assets/img/w-2.png" alt="">
+                                </div>
+
+                                <div class="description-services">
+                                    <h4>blablabla</h4>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum quo nulla qui omnis vel quaerat voluptatibus corporis adipisci sapiente!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="my-row monitor">
+                                <div class="img-container">
+                                    <img src="../assets/img/w-1.png" alt="">
+                                </div>
+
+                                <div class="description-services">
+                                    <h4>blablabla</h4>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum quo nulla qui omnis vel quaerat voluptatibus corporis adipisci sapiente!
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -162,18 +199,46 @@ methods: {
             }
 
         .reasons-to-choose {
-            // text-align: end;
-            .col-12 {
+            
+            .safety {
                 @include debug-1;
+                .img-container {
+                width: 200px;
+
+                img {
+                    width: 100%;
+                    display: block
+                }
             }
 
-            .col-9 {
+            }
+
+            .play {
                 @include debug-2;
-                offset: 4;
+                width: 80%;
+                .img-container {
+                width: 200px;
+
+                img {
+                    width: 100%;
+                    display: block
+                }
             }
 
-            .col-6 {
+            }
+
+            .monitor {
                 @include debug-4;
+                width: 60%;
+                .img-container {
+                width: 200px;
+
+                img {
+                    width: 100%;
+                    display: block
+                }
+            }
+
             }
         }
     }
