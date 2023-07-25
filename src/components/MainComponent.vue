@@ -602,12 +602,13 @@ methods: {
 
         h4{
             font-size: 1.2em;
+            margin-right: 60px;
         }
 
         .dog-img-container {
             width: 250px;
             position:absolute;
-            top: -58px;
+            top: -59px;
 
             img {
                 width: 100%;
