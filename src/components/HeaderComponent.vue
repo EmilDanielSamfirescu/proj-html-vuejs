@@ -174,6 +174,7 @@ methods: {
         margin-right: 1.875rem;
         color: $text-color;
         text-decoration: none;
+        padding: 30px 0px;
 
         &:hover {
             color: $orange-main-color;

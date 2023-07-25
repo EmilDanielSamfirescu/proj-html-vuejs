@@ -99,12 +99,15 @@ methods: {
                     <div class="contacts">
                         <h5>Contact Me</h5>
 
-                        <div>
+                        <div class="d-flex">
                             <span>
                                 <i class="fa-solid fa-location-arrow"></i>
                             </span>
-                            4500 Mercantile plaza, suite <br>
-                            300, forth worth, TX, 76137, USA
+
+                            <span>
+                                4500 Mercantile plaza, suite <br>
+                                300, forth worth, TX, 76137, USA
+                            </span>
 
                         </div>
 
@@ -151,6 +154,7 @@ methods: {
         color: $orange-main-color;
     }
     .answers{
+        
         .socials-container {
 
             a {
@@ -188,6 +192,8 @@ methods: {
         list-style: none;
 
         li{
+            margin-bottom: 5px;
+
             &::first-letter{
                 text-transform: uppercase;
             }
@@ -199,6 +205,17 @@ methods: {
                 &:hover {
                     color: $orange-main-color;
                 }
+            }
+        }
+    }
+
+    .contacts {
+        div {
+            margin-bottom: 5px;
+
+            i {
+                color: $orange-main-color;
+                margin-right: 10px;
             }
         }
     }

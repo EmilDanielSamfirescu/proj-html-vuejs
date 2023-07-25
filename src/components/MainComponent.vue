@@ -226,7 +226,83 @@ methods: {
 
         <!-- FOURF SECTION -->
         <section class="section-customers">
-            FOURF SECTION
+            <div class="my-container">
+                <div class="my-row jusftify-content-between">
+
+                    <div class="my-card mx-2">
+
+                        <div class="review-card">
+
+                            <div class="card-title d-flex align-items-center">
+                                <div class="img-container">
+                                    <img src="../assets/img/dog-icon.png" alt="">
+                                </div>
+                                <h6>Review & Rating</h6>
+                            </div>
+
+                            <h4>Over 8000Customers With 5 Star Review</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum velit amet enim. Quod commodi hic quidem, numquam odit quas laborum nobis laudantium optio enim. Debitis.</p>
+                            <div class="stars">
+                                ⭐️⭐️⭐️⭐️⭐️
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="my-card mx-2">
+
+                        <div class="customer-card">
+                            <div class="stars">
+                                ⭐️⭐️⭐️⭐️⭐️
+                            </div>
+
+                            <h5>Great Place</h5>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, esse labore odio corrupti error molestiae nemo quis natus recusandae numquam cum facere quibusdam debitis sunt.</p>
+
+                            <div class="customer-info">
+
+                                <div class="customer-img">
+                                    <img src="../assets/img/t1.png" alt="customer">
+                                </div>
+                                <div class="customer-name">
+                                    <h6>Tobias May</h6>
+                                    <p>UI/UX Designer</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="my-card mx-2">
+
+                        <div class="customer-card">
+                            <div class="stars">
+                                ⭐️⭐️⭐️⭐️⭐️
+                            </div>
+
+                            <h5>Great Place</h5>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, esse labore odio corrupti error molestiae nemo quis natus recusandae numquam cum facere quibusdam debitis sunt.</p>
+
+                            <div class="customer-info">
+
+                                <div class="customer-img">
+                                    <img src="../assets/img/t1.png" alt="customer">
+                                </div>
+                                <div class="customer-name">
+                                    <h6>Tobias May</h6>
+                                    <p>UI/UX Designer</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
         </section>
         <!-- FOURF SECTION -->
 
@@ -416,7 +492,79 @@ methods: {
 }
 
 .section-customers {
-    @include debug-4
+    .my-row {
+        .my-card {
+        width: calc(100% / 3);
+        margin: 50px 0px;
+        
+        .review-card{
+            padding: 15px;
+            text-align: center;
+            .stars{
+                text-align: start;
+            }
+
+            p{
+                font-size: 0.8em;
+            }
+
+            h4 {
+                margin: 20px 0px;
+            }
+            .card-title {
+                .img-container {
+                    width: 30px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                h6 {
+                    margin-left: 15px;
+                    font-size: 0.8em;
+                    color: $top-header-bg-color;
+                }
+            }
+        }
+
+        .customer-card {
+            background-color: $bg-lightgrey-color;
+            padding: 15px;
+            h5 {
+            margin: 10px 0px;
+        }
+
+        p{
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .customer-info {
+            .customer-img {
+                width: 50px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: inline-block;
+                vertical-align: middle;
+        
+                img {
+                    width: 100%;
+                }
+            }
+
+            .customer-name {
+                display: inline-block;
+                margin-left: 20px;
+                vertical-align: middle;
+
+                p{
+                    font-size: 0.6em;
+                    margin: 0;
+                }
+            }
+        }
+        }
+    }
+    }
+
 }
 
 </style>
