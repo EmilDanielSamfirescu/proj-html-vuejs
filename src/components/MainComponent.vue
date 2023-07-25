@@ -48,9 +48,6 @@ methods: {
                     
                 </div>
             </div>
-            <!-- <div>
-                <img src="../assets/img/dog-left.png" alt="">
-            </div> -->
         </section>
         <!-- FIRST SECTION -->
 
@@ -280,7 +277,7 @@ methods: {
                         
                     </div>
 
-                    <div class="my-card">
+                    <div class="my-card last-card">
 
                         <div class="customer-card">
                             <div class="stars">
@@ -304,9 +301,15 @@ methods: {
                             </div>
                         </div>
                         
+                        <div class="arrows">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
                     </div>
 
                 </div>
+                
+
 
                 <div class="subscribe-container">
 
@@ -439,6 +442,11 @@ methods: {
         padding: 20px 10px;
         margin: 20px 10px;
         color: white;
+
+        &:hover{
+            background-color: $top-header-bg-color;
+            cursor: pointer;
+        }
         .img-container {
             width: 40px;
 
@@ -561,7 +569,7 @@ methods: {
 
 .section-customers {
     background: rgb(0,0,0);
-background: linear-gradient(360deg, rgba(0,0,0,1) 13%, rgba(255,255,255,1) 13%);
+    background: linear-gradient(360deg, rgba(0,0,0,1) 13%, rgba(255,255,255,1) 13%);
     .my-row {
         .my-card {
         width: calc(100% / 3);
@@ -634,6 +642,29 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 13%, rgba(255,255,255,1) 13%);
         }
         }
     }
+
+    .last-card {
+        position: relative;
+        .arrows{
+            position: absolute;
+            right: 0px;
+            bottom: -45px;
+            i {
+                padding: 5px 8px;
+                font-size: 1.5em;
+                background-color: $orange-main-color;
+                color: white;
+                margin-left: 5px;
+
+                &:hover{
+                    background-color: $top-header-bg-color;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
 
     .subscribe-container {
 
