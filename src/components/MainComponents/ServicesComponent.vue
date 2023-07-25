@@ -4,10 +4,39 @@ export default {
     name: "ServicesComponent",
     data (){
         return {
-
+            service: [
+                {
+                    title: 'Pet Sitting',
+                    image: 'd-1.png',
+                    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.',
+                },
+                {
+                    title: 'Puppy Sitting',
+                    image: 'd-2.png',
+                    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.',
+                },
+                {
+                    title: 'Dog Walking',
+                    image: 'd-3.png',
+                    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.',
+                },
+                {
+                    title: 'Night Care',
+                    image: 'd-4.png',
+                    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.',
+                },
+                {
+                    title: 'Pet Sitting',
+                    image: 'd-5.png',
+                    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.',
+                },
+            ]
         }
     },
     methods: {
+        getImagePath: function(image){
+                return new URL (image, import.meta.url).href;
+            }
 
     }
 };
@@ -28,14 +57,15 @@ export default {
 
                 <div class="my-row justify-content-center">
 
-                    <div class="card-service">
+                    <div class="card-service"
+                        v-for="(singleCard, i) in service" :key="i">
 
                         <div class="img-container">
-                            <img src="../../assets/img/d-1.png" alt="dog-icon">
+                            <img :src="getImagePath(`../../assets/img/${singleCard.image}`)" :alt="singleCard.title">
                         </div>
 
-                        <h5>Puppy Sitting</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.</p>
+                        <h5>{{singleCard.title}}</h5>
+                        <p>{{singleCard.text}}</p>
 
                         <div class="arrow-container">
                             <a href="#">
@@ -44,75 +74,6 @@ export default {
                         </div>
 
                     </div>
-
-                    <div class="card-service">
-
-                        <div class="img-container">
-                            <img src="../../assets/img/d-2.png" alt="dog-icon">
-                        </div>
-
-                        <h5>Dog Walking</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.</p>
-
-                        <div class="arrow-container">
-                            <a href="#">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="card-service">
-
-                        <div class="img-container">
-                            <img src="../../assets/img/d-3.png" alt="dog-icon">
-                        </div>
-
-                        <h5>Night Care</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.</p>
-
-                        <div class="arrow-container">
-                            <a href="#">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="card-service">
-
-                        <div class="img-container">
-                            <img src="../../assets/img/d-4.png" alt="dog-icon">
-                        </div>
-
-                        <h5>Pet Sitting</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.</p>
-
-                        <div class="arrow-container">
-                            <a href="#">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="card-service">
-
-                        <div class="img-container">
-                            <img src="../../assets/img/d-5.png" alt="dog-icon">
-                        </div>
-
-                        <h5>Pet Sitting</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, omnis dolor.</p>
-
-                        <div class="arrow-container">
-                            <a href="#">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </div>
-
-                    </div>
-
 
                 </div>
 
@@ -178,7 +139,7 @@ export default {
         h5 {
             margin: 10px 0px;
         }
-
+        
         p{
             font-size: 0.9em;
         }

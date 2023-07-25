@@ -3,12 +3,24 @@ export default {
     name: "JumbotronComponent",
     data (){
         return {
-
+            // count: 0,
+            // jumboSlide: [
+            //     {
+            //         image: 'b.png',
+            //         title: 'Welcome To DogMilo Pets',
+            //         text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, illo voluptates maxime ullam provident rem.',
+            //     },
+            //     {
+            //         image: 'city-dog.jpg',
+            //         title: 'Welcome To DogMilo Pets',
+            //         text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, illo voluptates maxime ullam provident rem.',
+            //     }
+            // ]
         }
     },
-methods: {
+    methods: {
 
-}
+    }
 };
 </script>
 
@@ -23,7 +35,7 @@ methods: {
     <img src="../../assets/img/arrow.svg" alt="">
 </div>
 
-<div class="jumbotron-img-container">
+<div class="jumbotron-img-container" >
     <img src="../../assets/img/b.png" alt="">
 </div>
 
