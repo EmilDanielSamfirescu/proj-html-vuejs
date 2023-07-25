@@ -11,7 +11,7 @@ export default {
         AboutUsComponent,
         ServicesComponent,
         TrainingComponent,
-        BlogComponent
+        BlogComponent,
     },
 data (){
     return {

@@ -57,6 +57,10 @@ export default {
 
 .menu-header {
     padding: .625rem 0rem;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
 
 
     .links-menu > a{
