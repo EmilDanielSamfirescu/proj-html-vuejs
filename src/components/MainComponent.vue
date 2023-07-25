@@ -15,7 +15,7 @@ methods: {
 <template>
     <main>
         <!-- FIRST SECTION -->
-        <section class="section-about-us">
+        <section class="section-about-us" id="About">
             <div class="my-container">
                 <div class="my-row justify-content-between">
 
@@ -52,7 +52,7 @@ methods: {
         <!-- FIRST SECTION -->
 
         <!-- SECOND SECTION -->
-        <section class="section-services">
+        <section class="section-services" id="Services">
             <div class="my-container">
 
                 <div class="service-title">
@@ -158,7 +158,7 @@ methods: {
         <!-- SECOND SECTION -->
 
         <!-- THIRD SECTION -->
-        <section class="section-why-us">
+        <section class="section-why-us" id="Training">
             
                 <div class="my-row">
 
@@ -226,7 +226,7 @@ methods: {
         <!-- THIRD SECTION -->
 
         <!-- FOURF SECTION -->
-        <section class="section-customers">
+        <section class="section-customers" id="Blogs">
             <div class="my-container">
 
                 <div class="my-row jusftify-content-between">
