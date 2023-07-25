@@ -20,7 +20,8 @@ methods: {
             <div class="my-row">
 
                 <div class="left">
-                    <img src="../../assets/img/why.png" alt="">
+                    <img src="../../assets/img/why.png" alt="dog-frind" class="first-img">
+                    <img src="../../assets/img/second-dog.jpeg" alt="second-dog.friend" class="second-img">
                 </div>
 
                 <div class="right">
@@ -88,14 +89,27 @@ methods: {
 @use "../../assets/scss/partials/mixin.scss" as *;
 
 .section-why-us {
+    overflow: hidden;
 
 .left {
     width: calc(100% / 2);
+    max-height: 850px;
 
     img {
         width: 100%;
-        object-fit: cover;
+
     }
+    .second-img {
+        display: none;
+    }
+    &:hover .second-img {
+        display: block;
+    }
+
+    &:hover img:not(.second-img) {
+        display: none;
+    }
+
 }
 
 .right {
@@ -128,7 +142,7 @@ methods: {
 
             img {
                 width: 100%;
-                display: block
+                display: block;
             }
         }
 
