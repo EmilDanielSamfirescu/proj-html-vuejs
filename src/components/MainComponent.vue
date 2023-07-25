@@ -45,8 +45,12 @@ methods: {
 
                     </div>
 
+                    
                 </div>
             </div>
+            <!-- <div>
+                <img src="../assets/img/dog-left.png" alt="">
+            </div> -->
         </section>
         <!-- FIRST SECTION -->
 
@@ -338,6 +342,31 @@ methods: {
 @use "../assets/scss/partials/variables.scss" as *;
 @use "../assets/scss/partials/mixin.scss" as *;
 .section-about-us {
+    position: relative;
+
+    &::before {
+        content: '';
+        display: table;
+        background-image: url('../assets/img/dog-left.png');
+        background-size: cover;
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        right: 0px;
+        transform: scaleX(-1);
+    }
+
+    &::after {
+        content: '';
+        display: table;
+        background-image: url('../assets/img/dog-left.png');
+        background-size: cover;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        bottom: -300px;
+    }
+
     .my-row {
         padding: -30px;
         margin: 50px 0px;
@@ -370,12 +399,26 @@ methods: {
                 margin: 20px 0px;
             }
         }
+
     }
 }
 
 .section-services {
     background-color: $bg-lightgrey-color;
     padding: 50px 0px;
+
+    &::before {
+        content: '';
+        display: table;
+        background-image: url('../assets/img/dog-left.png');
+        background-size: cover;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        right: 0px;
+        transform: scaleX(-1);
+    }
+
 
     .service-title {
         text-align: center;
