@@ -1,21 +1,16 @@
 <script >
 
-import NavLinkBar from '../components/HeaderComponents/NavLinkBar.vue';
+import NavLinkBar from './HeaderComponents/NavLinkBar.vue';
+import JumbotronComponent from './HeaderComponents/JumbotronComponent.vue';
 
 export default {
     name: "HeaderComponent",
     components: {
-        NavLinkBar
+        NavLinkBar,
+        JumbotronComponent
     },
 data (){
     return {
-        // headerNavLinks: [
-        //     'Home',
-        //     'About',
-        //     'Services',
-        //     'Training',
-        //     'Blogs'
-        // ]
     }
 },
 methods: {
@@ -61,61 +56,9 @@ methods: {
 
         <NavLinkBar />
 
-        <!-- <section class="menu-header">
-            <div class="my-container">
-                <div class="my-row justify-content-between align-items-center">
+        <JumbotronComponent />
 
-                    <div class="logo-container">
-                        <a href="#">
-                            <img src="../assets/img/logo.png" alt="logo">
-                        </a>
-                    </div>
 
-                    <div class="link-contaner d-flex justify-content-between align-items-center">
-                        <div class="links-menu"
-                        v-for="(links, i) in headerNavLinks" :key="i">
-                            <a :href="`#${links}`">{{ links }}</a>
-                        </div>
-                        <button>
-                            Get In Touch!
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
-
-        <section class="jumbotron">
-
-            <div id="arrow-l">
-                <img src="../assets/img/arrow.svg" alt="">
-            </div>
-
-            <div id="arrow-r">
-                <img src="../assets/img/arrow.svg" alt="">
-            </div>
-
-            <div class="jumbotron-img-container">
-                <img src="../assets/img/b.png" alt="">
-            </div>
-
-            <div class="jumbotron-description-container">
-                <h1><strong>Welcome to</strong> 
-                    <br>
-                    DogMilo
-                    <strong>Pets!</strong></h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, illo voluptates maxime ullam provident rem.</p>
-                <div>
-                    <button>
-                            Get Started
-                    </button>
-                    <div class="play-icon-container">
-                        <img src="../assets/img/play.png" alt="play-icon">
-                    </div>
-                </div>
-            </div>
-
-        </section>
 
     </header>
 </template>
@@ -173,127 +116,7 @@ methods: {
     }
 }
 
-// .menu-header {
-//     padding: .625rem 0rem;
 
 
-//     .links-menu > a{
-//         font-size: 1.3em;
-//         margin-right: 1.875rem;
-//         color: $text-color;
-//         text-decoration: none;
-//         padding: 30px 0px;
-
-//         &:hover {
-//             color: $orange-main-color;
-//         }
-//     }
-
-//     button {
-//         font-size: 1.3em;
-//         color: white;
-//         background-color: $orange-main-color;
-//         border: none;
-//         border-radius: 50px;
-//         padding: .625rem 1.5625rem;
-
-//         &:hover {
-//             background-color: $button-hover-color;
-//         }
-//     }
-// }
-
-.jumbotron {
-    position: relative;
-    .jumbotron-img-container{
-        width: 100%;
-        img {
-            width: 100%;
-            display: block;
-        }
-
-    }
-
-    #arrow-r {
-        width: 100px;
-        position: absolute;
-        right: 0px;
-        top: 50%;
-        transform: translateY(-50%);
-        filter: invert(60%) sepia(65%) saturate(3298%) hue-rotate(167deg) brightness(96%) contrast(100%) opacity(50%);
-        cursor: pointer;
-
-        &:hover {
-            filter: invert(60%) sepia(65%) saturate(3298%) hue-rotate(167deg) brightness(96%) contrast(100%) opacity(100%);
-        }
-    }
-
-    #arrow-l {
-        width: 100px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%) scaleX(-1);
-        filter: invert(60%) sepia(65%) saturate(3298%) hue-rotate(167deg) brightness(96%) contrast(100%) opacity(30%);
-        cursor: pointer;
-
-        &:hover {
-            filter: invert(60%) sepia(65%) saturate(3298%) hue-rotate(167deg) brightness(96%) contrast(100%) opacity(100%);
-        }
-    }
-    
-    
-    .jumbotron-description-container{
-        width: 500px;
-        color: white;
-        position: absolute;
-        top: 150px;
-        left: 150px;
-
-        h1 {
-            font-size: 3.5em;
-            line-height: 1.2em;
-        }
-
-        p{
-            font-size: 1.1em;
-            margin: 1.5625rem 0rem;
-        }
-
-        button {
-            font-size: 1.3em;
-            color: white;
-            background-color: $orange-main-color;
-            border: none;
-            border-radius: 50px;
-            padding: .625rem 1.5625rem;
-            vertical-align: middle;
-    
-            &:hover {
-                background-color: $button-hover-color;
-            }
-        }
-
-        .play-icon-container {
-                width: 3.125rem;
-                display: inline-block;
-                vertical-align: middle;
-                margin-left: .9375rem;
-            img {
-                width: 100%;
-                padding: 10px;
-                display: block;
-                background-color: $play-color;
-                border-radius: 10px;
-
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-
-
-
-}
 
 </style>
