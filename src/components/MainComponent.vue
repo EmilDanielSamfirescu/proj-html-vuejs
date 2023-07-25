@@ -227,9 +227,10 @@ methods: {
         <!-- FOURF SECTION -->
         <section class="section-customers">
             <div class="my-container">
+
                 <div class="my-row jusftify-content-between">
 
-                    <div class="my-card mx-2">
+                    <div class="my-card">
 
                         <div class="review-card">
 
@@ -249,7 +250,7 @@ methods: {
                         
                     </div>
 
-                    <div class="my-card mx-2">
+                    <div class="my-card">
 
                         <div class="customer-card">
                             <div class="stars">
@@ -275,7 +276,7 @@ methods: {
                         
                     </div>
 
-                    <div class="my-card mx-2">
+                    <div class="my-card">
 
                         <div class="customer-card">
                             <div class="stars">
@@ -302,6 +303,30 @@ methods: {
                     </div>
 
                 </div>
+
+                <div class="subscribe-container">
+
+                    <div class="dog-img-container">
+                        <img src="../assets/img/news.png" alt="dogs">
+                    </div>
+
+                    <div>
+                        <h4>Subscribe To Our News Letter</h4>
+
+                        <div class="newsletter">
+
+                            <div class="e-mail">
+
+                                <input type="email" placeholder="Your Email Here">
+                                <i class="fa-solid fa-at"></i>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </section>
         <!-- FOURF SECTION -->
@@ -495,7 +520,7 @@ methods: {
     .my-row {
         .my-card {
         width: calc(100% / 3);
-        margin: 50px 0px;
+        margin: 70px 5px 120px 5px;
         
         .review-card{
             padding: 15px;
@@ -562,8 +587,56 @@ methods: {
             }
         }
         }
+        }
     }
+
+    .subscribe-container {
+
+        background-color: $orange-main-color;
+        text-align: end;
+        padding: 35px;
+        width: 70%;
+        position: relative;
+        color: white;
+        margin: auto;
+
+        h4{
+            font-size: 1.2em;
+        }
+
+        .dog-img-container {
+            width: 250px;
+            position:absolute;
+            top: -58px;
+
+            img {
+                width: 100%;
+            }
+        }
+        .newsletter {
+            margin-top: 25px;
+            .e-mail {
+            position: relative;
+            display:inline-block;
+            width:50%; 
+                
+                input[type="email"] { 
+                    width: 100%; 
+                    height: 40px; 
+                    } 
+                .fa-at { 
+                    position: absolute;
+                    right: 2px;
+                    top:50%;
+                    transform: translateY(-50%); 
+                    padding: 10px;
+                    background-color: $orange-main-color;
+                    color: white;
+                    }
+        }
+        }
     }
+
 
 }
 

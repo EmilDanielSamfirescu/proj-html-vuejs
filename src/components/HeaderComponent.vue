@@ -211,6 +211,7 @@ methods: {
         position: absolute;
         right: 0px;
         top: 50%;
+        transform: translateY(-50%);
         filter: invert(60%) sepia(65%) saturate(3298%) hue-rotate(167deg) brightness(96%) contrast(100%) opacity(50%);
         cursor: pointer;
 
@@ -221,9 +222,9 @@ methods: {
 
     #arrow-l {
         width: 100px;
-        transform: scaleX(-1);
         position: absolute;
         top: 50%;
+        transform: translateY(-50%) scaleX(-1);
         filter: invert(60%) sepia(65%) saturate(3298%) hue-rotate(167deg) brightness(96%) contrast(100%) opacity(30%);
         cursor: pointer;
 
