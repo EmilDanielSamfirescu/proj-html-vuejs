@@ -517,6 +517,8 @@ methods: {
 }
 
 .section-customers {
+    background: rgb(0,0,0);
+background: linear-gradient(360deg, rgba(0,0,0,1) 13%, rgba(255,255,255,1) 13%);
     .my-row {
         .my-card {
         width: calc(100% / 3);
