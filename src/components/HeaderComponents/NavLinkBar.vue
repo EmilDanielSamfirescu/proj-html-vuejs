@@ -69,6 +69,7 @@ export default {
         color: $text-color;
         text-decoration: none;
         padding: 30px 0px;
+        transition: all 0.4s;
 
         &:hover {
             color: $orange-main-color;
@@ -82,9 +83,14 @@ export default {
         border: none;
         border-radius: 50px;
         padding: .625rem 1.5625rem;
+        box-shadow: 3px 3px 7px rgb(137, 137, 137);
+        transition: all 0.4s;
 
         &:hover {
             background-color: $button-hover-color;
+        }
+        &:active {
+            box-shadow: 1px 1px 4px rgb(112, 112, 112);
         }
     }
 }

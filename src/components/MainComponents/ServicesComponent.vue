@@ -122,10 +122,12 @@ export default {
         padding: 20px 10px;
         margin: 20px 10px;
         color: white;
+        cursor: pointer;
+        box-shadow: 3px 3px 10px rgb(137, 137, 137);
+        transition: all 0.6s;
 
         &:hover{
             background-color: $top-header-bg-color;
-            cursor: pointer;
         }
         .img-container {
             width: 40px;
@@ -151,20 +153,20 @@ export default {
             background-color: $button-color;
             border-radius: 50%;
             line-height: 40px;
+            transition: all 0.6s;
 
             a {
                 list-style: none;
                 color: black;
                 padding: 10px;
 
-            }
-
-            &:hover {
-                background-color: $button-hover-color;
-                
-                a{
+                &:hover {
                     color: white;
                 }
+            }
+            &:hover {
+                background-color: $button-hover-color;
+
             }
         }
     }

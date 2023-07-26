@@ -72,6 +72,7 @@ export default {
         this.nextButton();
         }, 4000);
     }
+    
 };
 </script>
 
@@ -195,6 +196,7 @@ export default {
         border-radius: 50px;
         padding: .625rem 1.5625rem;
         vertical-align: middle;
+        transition: all 0.4s;
 
         &:hover {
             background-color: $button-hover-color;

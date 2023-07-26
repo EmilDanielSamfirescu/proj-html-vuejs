@@ -113,8 +113,12 @@ methods: {
 
                             <div class="e-mail">
 
-                                <input type="email" placeholder="Your Email Here">
-                                <i class="fa-solid fa-at"></i>
+                                <form>
+                                    <input 
+                                    type="email" 
+                                    placeholder="Your Email Here">
+                                        <i class="fa-solid fa-at"></i>
+                                </form>
 
                             </div>
 
