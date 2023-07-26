@@ -68,7 +68,7 @@ export default {
         margin-right: 1.875rem;
         color: $text-color;
         text-decoration: none;
-        padding: 30px 0px;
+        padding: 1.875rem 0rem;
         transition: all 0.4s;
 
         &:hover {
@@ -83,7 +83,7 @@ export default {
         border: none;
         border-radius: 50px;
         padding: .625rem 1.5625rem;
-        box-shadow: 3px 3px 7px rgb(137, 137, 137);
+        box-shadow: .1875rem .1875rem .4375rem rgb(137, 137, 137);
         transition: all 0.4s;
 
         &:hover {

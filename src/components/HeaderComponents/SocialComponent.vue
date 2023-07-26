@@ -34,11 +34,11 @@ methods: {
 a {
     list-style: none;
     color: white;
-    margin-right: 5px;
+    margin-right: .3125rem;
     i{
 
     &.fa-brands{
-        padding: 3px;
+        padding: .1875rem;
         border-radius: 3px;
         &.fa-square-facebook {
             background-color: #333BB0;

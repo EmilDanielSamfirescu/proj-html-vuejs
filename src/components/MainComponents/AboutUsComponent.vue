@@ -64,8 +64,8 @@ export default {
         display: table;
         background-image: url('../../assets/img/dog-left.png');
         background-size: cover;
-        height: 250px;
-        width: 250px;
+        height: 15.625rem;
+        width: 15.625rem;
         position: absolute;
         right: 0px;
         transform: scaleX(-1);
@@ -76,42 +76,42 @@ export default {
         display: table;
         background-image: url('../../assets/img/dog-left.png');
         background-size: cover;
-        height: 200px;
-        width: 200px;
+        height: 12.5rem;
+        width: 12.5rem;
         position: absolute;
-        bottom: -300px;
+        bottom: -18.75rem;
     }
 
     .my-row {
-        padding: -30px;
-        margin: 50px 0px;
+        padding: -1.875rem;
+        margin: 3.125rem 0rem;
         .left-img-container {
             width: calc(100% / 2);
-            max-width: 500px;
+            max-width: 31.25rem;
 
             img {
                 width: 100%;
                 display: block;
-                padding: 30px;
+                padding: 1.875rem;
             }
         }
 
         .right-description {
             width: calc(100% / 2);
-            margin-top: 50px;
-            padding: 30px;
+            margin-top: 3.125rem;
+            padding: 1.875rem;
             
 
             .upper-title {
                 p {
                     margin-bottom: 0;
-                    margin-left: 10px;
+                    margin-left: .625rem;
                     color: $top-header-bg-color;
                 }
             }
 
             h2 {
-                margin: 20px 0px;
+                margin: 1.25rem 0rem;
             }
         }
 

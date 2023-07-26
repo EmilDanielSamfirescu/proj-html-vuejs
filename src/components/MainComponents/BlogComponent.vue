@@ -20,7 +20,7 @@ export default {
                     name:'Wayne Barnett',
                     roleJob: 'Founder & CEO',
                     text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, esse labore odio corrupti error molestiae nemo quis natus recusandae numquam cum facere quibusdam debitis sunt',
-                    title: 'Bello ciò',
+                    title: 'Beo ciò!',
                     vote: '8'
                 },
                 {
@@ -52,7 +52,7 @@ export default {
                     name:'Barbara Ramos',
                     roleJob: 'Graphic Designer',
                     text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, esse labore odio corrupti error molestiae nemo quis natus recusandae numquam cum facere quibusdam debitis sunt',
-                    title: 'Da evitare!',
+                    title: 'Oi ndemo a vedere i pinfloi!',
                     vote: '2'
                 },
             ]
@@ -308,7 +308,7 @@ methods: {
     .my-row {
         .my-card {
             width: calc(100% / 3);
-            margin: 70px 5px 120px 5px;
+            margin: 4.375rem .3125rem 7.5rem .3125rem;
             position: relative;
             .stars{
                 text-align: start;
@@ -327,7 +327,7 @@ methods: {
                 }
 
                 h4 {
-                    margin: 20px 0px;
+                    margin: 1.25rem 0rem;
                 }
                 .card-title {
                     .img-container {
@@ -339,7 +339,7 @@ methods: {
                         }
                     }
                     h6 {
-                        margin-left: 15px;
+                        margin-left: .9375rem;
                         font-size: 0.8em;
                         color: $top-header-bg-color;
                     }
@@ -348,18 +348,19 @@ methods: {
 
             .customer-card {
                 background-color: $bg-lightgrey-color;
-                padding: 15px;
+                padding: .9375rem;
                 h5 {
-                margin: 10px 0px;
+                margin: .625rem 0rem;
             }
 
             p{
                 font-size: 1em;
-                margin-bottom: 20px;
+                margin-bottom: 1.25rem;
             }
             .customer-info {
                 .customer-img {
-                    width: 50px;
+                    width: 3.125rem;
+                    height: 3.125rem;
                     border-radius: 50%;
                     overflow: hidden;
                     display: inline-block;
@@ -372,12 +373,17 @@ methods: {
 
                 .customer-name {
                     display: inline-block;
-                    margin-left: 20px;
+                    margin-left: 1.25rem;
                     vertical-align: middle;
 
+                    h6{
+                        margin-bottom: .125rem;
+                    }
+
                     p{
-                        font-size: 0.6em;
+                        font-size: 0.8em;
                         margin: 0;
+                        color: #878787;
                     }
                 }
             }
@@ -388,11 +394,11 @@ methods: {
             right: 0px;
             bottom: -45px;
             i {
-                padding: 5px 8px;
+                padding: .3125rem .5rem;
                 font-size: 1.5em;
                 background-color: $orange-main-color;
                 color: white;
-                margin-left: 5px;
+                margin-left: .3125rem;
 
                 &:hover{
                     background-color: $top-header-bg-color;
@@ -439,20 +445,20 @@ methods: {
 
         h4{
             font-size: 1.2em;
-            margin-right: 60px;
+            margin-right: 3.75rem;
         }
 
         .dog-img-container {
-            width: 250px;
+            width: 15.625rem;
             position:absolute;
-            top: -59px;
+            top: -3.6875rem;
 
             img {
                 width: 100%;
             }
         }
         .newsletter {
-            margin-top: 25px;
+            margin-top: 1.5625rem;
             .e-mail {
             position: relative;
             display:inline-block;
@@ -460,14 +466,14 @@ methods: {
                 
                 input[type="email"] { 
                     width: 100%; 
-                    height: 40px; 
+                    height: 2.5rem; 
                     } 
                 .fa-at { 
                     position: absolute;
                     right: 2px;
                     top:50%;
                     transform: translateY(-50%); 
-                    padding: 10px;
+                    padding: .625rem;
                     background-color: $orange-main-color;
                     color: white;
                     }

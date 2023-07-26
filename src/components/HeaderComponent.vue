@@ -67,7 +67,7 @@ methods: {
 .info-header {
     background-color: $top-header-bg-color;
     .my-row {
-    padding: 5px 0px;
+    padding: .3125rem 0rem;
     color: white;
     font-size: 15px;
 
@@ -76,7 +76,7 @@ methods: {
         }
 
         .info-container > div:first-child {
-            margin-right: 20px;
+            margin-right: 1.25rem;
         }
 
     }

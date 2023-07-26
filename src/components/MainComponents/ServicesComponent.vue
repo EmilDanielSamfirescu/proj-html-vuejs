@@ -95,10 +95,10 @@ export default {
         display: table;
         background-image: url('../../assets/img/dog-left.png');
         background-size: cover;
-        height: 200px;
-        width: 200px;
+        height: 12.5rem;
+        width: 12.5rem;
         position: absolute;
-        right: 0px;
+        right: 0rem;
         transform: scaleX(-1);
     }
 
@@ -118,19 +118,19 @@ export default {
         background-color: $orange-main-color;
         width: calc(100% / 6);
         text-align: center;
-        border-radius: 100px;
-        padding: 20px 10px;
-        margin: 20px 10px;
+        border-radius: 6.25rem;
+        padding: 1.25rem .625rem;
+        margin: 20px .625rem;
         color: white;
         cursor: pointer;
-        box-shadow: 3px 3px 10px rgb(137, 137, 137);
+        box-shadow: .1875rem .1875rem .625rem rgb(137, 137, 137);
         transition: all 0.6s;
 
         &:hover{
             background-color: $top-header-bg-color;
         }
         .img-container {
-            width: 40px;
+            width: 2.5rem;
 
             img {
                 width: 100%;
@@ -139,7 +139,7 @@ export default {
         }
 
         h5 {
-            margin: 10px 0px;
+            margin: .625rem 0rem;
         }
         
         p{
@@ -147,8 +147,8 @@ export default {
         }
 
         .arrow-container {
-            width: 40px;
-            height: 40px;
+            width: 2.5rem;
+            height: 2.5rem;
             font-size: 1.5em;
             background-color: $button-color;
             border-radius: 50%;
@@ -158,7 +158,7 @@ export default {
             a {
                 list-style: none;
                 color: black;
-                padding: 10px;
+                padding: .625rem;
 
                 &:hover {
                     color: white;

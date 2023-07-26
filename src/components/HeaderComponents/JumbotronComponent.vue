@@ -143,9 +143,9 @@ export default {
     }
 
     #arrow-r {
-        width: 100px;
+        width: 6.25rem;
         position: absolute;
-        right: 0px;
+        right: 0rem;
         top: 50%;
         transform: translateY(-50%);
         filter: invert(60%) sepia(65%) saturate(3298%) hue-rotate(167deg) brightness(96%) contrast(100%) opacity(50%);
@@ -158,7 +158,7 @@ export default {
     }
 
     #arrow-l {
-        width: 100px;
+        width: 6.25rem;
         position: absolute;
         top: 50%;
         transform: translateY(-50%) scaleX(-1);
@@ -172,11 +172,11 @@ export default {
     }
     
     .jumbotron-description-container{
-    width: 500px;
+    width: 31.25rem;
     color: white;
     position: absolute;
-    top: 120px;
-    left: 210px;
+    top: 7.5rem;
+    left: 13.125rem;
 
     h1 {
         font-size: 3.5em;
@@ -210,7 +210,7 @@ export default {
             margin-left: .9375rem;
         img {
             width: 100%;
-            padding: 10px;
+            padding: .625rem;
             display: block;
             background-color: $play-color;
             border-radius: 10px;

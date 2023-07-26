@@ -146,7 +146,7 @@ methods: {
     color: white;
     background-color: black;
     color: $text-color;
-    padding: 40px 0px;
+    padding: 2.5rem 0rem;
     border-bottom: 1px solid $text-color;
 
     h5 {
@@ -158,7 +158,7 @@ methods: {
         list-style: none;
 
         li{
-            margin-bottom: 5px;
+            margin-bottom: .3125rem;
 
             &::first-letter{
                 text-transform: uppercase;
@@ -177,11 +177,11 @@ methods: {
 
     .contacts {
         div {
-            margin-bottom: 5px;
+            margin-bottom: .3125rem;
 
             i {
                 color: $orange-main-color;
-                margin-right: 10px;
+                margin-right: .625rem;
             }
         }
     }
@@ -191,7 +191,7 @@ methods: {
     color: white;
     background-color: black;
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 </style>

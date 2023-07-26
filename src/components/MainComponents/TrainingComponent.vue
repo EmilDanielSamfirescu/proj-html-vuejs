@@ -93,7 +93,7 @@ methods: {
 
 .left {
     width: calc(100% / 2);
-    max-height: 850px;
+    max-height: 53.125rem;
 
     img {
         width: 100%;
@@ -114,19 +114,19 @@ methods: {
 
 .right {
     width: calc(100% / 2);
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: 3.125rem;
+    padding: 1.25rem;
     .upper-title {
             p {
                 margin-bottom: 0;
-                margin-left: 10px;
+                margin-left: .625rem;
                 color: $top-header-bg-color;
             }
         }
     
     h2 {
-        margin-top: 20px;
-        margin-bottom: 40px;
+        margin-top: 1.25rem;
+        margin-bottom: 2.5rem;
     }
 
     p {
@@ -137,8 +137,8 @@ methods: {
         .safety {
             .img-container {
             flex-grow: 0;
-            width: 250px;
-            margin-right: 20px;
+            width: 15.625rem;
+            margin-right: 1.25rem;
 
             img {
                 width: 100%;
@@ -149,12 +149,12 @@ methods: {
         }
 
         .play {
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin-top: .9375rem;
+            margin-bottom: .9375rem;
             .img-container {
             flex-grow: 0;
-            width: 300px;
-            margin-right: 20px;
+            width: 18.75rem;
+            margin-right: 1.25rem;
 
             img {
                 width: 100%;
@@ -167,8 +167,8 @@ methods: {
         .monitor {
             .img-container {
             flex-grow: 0;
-            width: 300px;
-            margin-right: 20px;
+            width: 18.75rem;
+            margin-right: 1.25rem;
 
             img {
                 width: 100%;
