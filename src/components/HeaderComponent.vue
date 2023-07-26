@@ -79,37 +79,6 @@ methods: {
             margin-right: 20px;
         }
 
-        // .socials-container {
-
-        //     a {
-        //         list-style: none;
-        //         color: white;
-        //         margin-right: 5px;
-        //         i{
-
-        //         &.fa-brands{
-        //             padding: 3px;
-        //             border-radius: 3px;
-        //             &.fa-square-facebook {
-        //                 background-color: #333BB0;
-        //             }
-        //             &.fa-square-pinterest {
-        //                 background-color: #B03E4E;
-        //             }
-        //             &.fa-square-twitter {
-        //                 background-color: #96D0CD;
-        //             }
-        //             &.fa-linkedin {
-        //                 background-color: #0B65CB;
-        //             }
-        //             &.fa-instagram {
-        //                 background-color: #992DA1;
-        //             }
-        //         }
-        //     }
-        //     }
-        // }
-
     }
 }
 
