@@ -3,6 +3,7 @@ export default {
     name: "JumbotronComponent",
     data (){
         return {
+            autoplay: null,
             courrentImg: 0,
             jumboSlide: [
                 {
@@ -38,7 +39,7 @@ export default {
                 return new URL (image, import.meta.url).href;
             },
         nextButton (){
-                console.log(`ciaone a dopo`);
+                // console.log(`ciaone a dopo`);
                 if (this.courrentImg == this.jumboSlide.length - 1){
                     this.courrentImg = 0;
                 } else {
@@ -46,19 +47,38 @@ export default {
                 }
             },
             prevButton (){
-                console.log(`ciao a prima`);
+                // console.log(`ciao a prima`);
                 if (this.courrentImg == 0){
                     this.courrentImg = this.jumboSlide.length - 1;
                 } else {
                     this.courrentImg--;
                 }
             },
+            stopautoplay(){
+                // console.log(`stoppato`);
+                clearInterval(this.autoplay);
+                this.autoplay = null;
+            },
+            restartautoplay() {
+                // console.log(`ripartito`);
+                this.autoplay = setInterval(() => {
+                this.nextButton();
+                }, 4000);
+            }
+            
+    },
+    mounted () {
+        this.autoplay = setInterval(() => {
+        this.nextButton();
+        }, 4000);
     }
 };
 </script>
 
 <template>
-    <section class="jumbotron">
+    <section class="jumbotron"
+    @mouseenter="stopautoplay()"
+    @mouseleave="restartautoplay()">
 
 
         <div id="arrow-l" @click="prevButton()" class="prev">
@@ -69,7 +89,8 @@ export default {
             <img src="../../assets/img/arrow.svg" alt="">
         </div>
 
-        <template v-for="(dogImg, i) in jumboSlide" :key="i">
+        <template 
+        v-for="(dogImg, i) in jumboSlide" :key="i">
             <div class="jumbotron-img-container" v-if="i == courrentImg ">
                 <!-- <img src="../../assets/img/b.png" alt=""> -->
                 <img :src="getImagePath(dogImg.image)" alt="various-dog">
@@ -111,6 +132,7 @@ export default {
         width: 100%;
         height: 600px;
         overflow: hidden;
+        
         
         img {
             width: 100%;
